@@ -11,8 +11,9 @@ public class PlayerController : MonoBehaviour
 
     // Update is called once per frame
     // 매 프레임마다 실행. 움직임, 입력체크 등에 사용.
-    void Update()
+    void Update() // 매 초 50~60번
     {
         // Move vehicle foward
+        transform.Translate(0,0,1);
     }
 }
