@@ -14,8 +14,14 @@ public class PlayerController : MonoBehaviour
     void Update() // 매 초 50~60번
     {
         // Move vehicle foward
-        transform.Translate(0,0,1);
+
+        //// transform.Translate(0,0,1);
+
         // transform = 이 GameObject의 Transform 컴포넌트: 위치, 회전, 크기 정보 가지고 있음. 자동으로 접근 가능 (MonoBehaviour 덕분)
         // Translate = 이동시키는 함수
+
+        transform.Translate(Vector3.forward);
+        // forward = 말 그대로 앞으로 가기(+1) -> 사실상 (0,0,1)이랑 같다!
+        // vector3 : 3차원
     }
 }
