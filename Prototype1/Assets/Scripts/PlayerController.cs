@@ -15,5 +15,7 @@ public class PlayerController : MonoBehaviour
     {
         // Move vehicle foward
         transform.Translate(0,0,1);
+        // transform = 이 GameObject의 Transform 컴포넌트: 위치, 회전, 크기 정보 가지고 있음. 자동으로 접근 가능 (MonoBehaviour 덕분)
+        // Translate = 이동시키는 함수
     }
 }
