@@ -20,8 +20,18 @@ public class PlayerController : MonoBehaviour
         // transform = 이 GameObject의 Transform 컴포넌트: 위치, 회전, 크기 정보 가지고 있음. 자동으로 접근 가능 (MonoBehaviour 덕분)
         // Translate = 이동시키는 함수
 
-        transform.Translate(Vector3.forward);
+        //// transform.Translate(Vector3.forward);
+
         // forward = 말 그대로 앞으로 가기(+1) -> 사실상 (0,0,1)이랑 같다!
         // vector3 : 3차원
+
+        transform.Translate(Vector3.forward * Time.deltaTime * 20);
+
+        // 모든 PC: 초당 20 이동 으로 통일 (원래는 사양마다 다름)
+        // Time.deltaTime : 프레임 보정
+        // 20 실제 속도
+
+        // * 는 실제로 곱한다는 의미랑 비슷하게 사용되는거임!
+        // Vector3.forward = (0, 0, 1), (0, 0, 1) * 0.016 = (0, 0, 0.016)  ← Time.deltaTime, (0, 0, 0.016) * 20 = (0, 0, 0.32)  ← 최종 이동 거리
     }
 }
