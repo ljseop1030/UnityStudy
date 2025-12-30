@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     public float fowardInput = 1;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    // 프로젝트 실행되자마자 시작됨. 오브젝트 호출 안돼도. 1번만(초기 설정)
+    // 프로젝트 실행되자마자 시작됨. 오브젝트 호출 안돼도. 1번만(초기 설정) 
     void Start()
     {
 
