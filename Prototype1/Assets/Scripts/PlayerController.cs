@@ -2,12 +2,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 5.0f;
-    public float turnSpeed = 5.0f;
-    
+    // Private variables
 
-    public float horizontalInput = 0;
-    public float fowardInput = 1;
+    private float speed = 5.0f;
+    private float turnSpeed = 5.0f;
+    
+    private float horizontalInput = 0;
+    private float fowardInput = 1;
 
     void Start()
     {
@@ -17,9 +18,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        // Get input
         horizontalInput = Input.GetAxis("Horizontal"); 
         fowardInput = Input.GetAxis("Vertical"); 
 
+        // Move vehicle
         transform.Translate(Vector3.forward * Time.deltaTime * speed * fowardInput);
         transform.Rotate(Vector3.up * Time.deltaTime * turnSpeed * horizontalInput);
     }
