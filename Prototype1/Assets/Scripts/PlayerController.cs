@@ -8,10 +8,11 @@ public class PlayerController : MonoBehaviour
     // public/private 하려면 클래스 변수. method 안에 들어가면 무조건 private.
     // Inspector에 나오게 하려면 무조건 클래스 변수로.
 
-    public float turnSpeed; // 미지정 시 기본값 0
+    public float turnSpeed = 5.0f; // 미지정 시 기본값 0
     
 
-    public float horizontalInput;
+    public float horizontalInput = 0;
+    public float fowardInput = 1;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     // 프로젝트 실행되자마자 시작됨. 오브젝트 호출 안돼도. 1번만(초기 설정)
@@ -51,13 +52,14 @@ public class PlayerController : MonoBehaviour
         // Vector3.forward = (0, 0, 1), (0, 0, 1) * 0.016 = (0, 0, 0.016)  ← Time.deltaTime, (0, 0, 0.016) * 20 = (0, 0, 0.32)  ← 최종 이동 거리
         */
 
-        horizontalInput = Input.GetAxis("Horizontal");
+        horizontalInput = Input.GetAxis("Horizontal"); //AD
+        fowardInput = Input.GetAxis("Vertical"); //WS
         // getAxis : WASD / 방향키
         // 계속 입력받아야 하니까 start 아니고 update에!
         // project settings -> input manager
 
-        transform.Translate(Vector3.forward * Time.deltaTime * speed); // 하드코딩 넘버 지양
-        transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput); // 초당 오른쪽으로 감. 오른쪽으로 가는 정도를 조정해서 좌우 방향조절.. 대박
+        transform.Translate(Vector3.forward * Time.deltaTime * speed * fowardInput); // 하드코딩 넘버 지양
+        transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput); // 초당 오른쪽으로 감. 오른쪽으로 가는 정도를 조정해서 옆으로 이동
         // horizontalInput: 바의 값을 받아서 사용
     }
 }
