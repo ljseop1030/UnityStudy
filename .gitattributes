@@ -1,0 +1,9 @@
+# 유니티 관련 파일은 언어 통계에서 제외하기
+*.mat linguist-vendored
+*.meta linguist-vendored
+*.unity linguist-vendored
+*.prefab linguist-vendored
+*.asset linguist-vendored
+
+# C# 파일은 C# 언어로 확실하게 지정하기
+*.cs linguist-language=C#
