@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour
 
         horizontalInput = Input.GetAxis("Horizontal");
         // getAxis : WASD / 방향키
+        // 계속 입력받아야 하니까 start 아니고 update에!
         // project settings -> input manager
 
         transform.Translate(Vector3.forward * Time.deltaTime * speed); // 하드코딩 넘버 지양
