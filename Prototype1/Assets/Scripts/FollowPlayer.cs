@@ -14,6 +14,7 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = player.transform.position;        
+        transform.position = player.transform.position + new Vector3(0,5,-8);        
+        // player의 위치에 (0,5,-8) 더해서 카메라 위치 지정. 같은 3차원 vector로 만들어줘야 함.
     }
 }
