@@ -59,7 +59,8 @@ public class PlayerController : MonoBehaviour
         // project settings -> input manager
 
         transform.Translate(Vector3.forward * Time.deltaTime * speed * fowardInput); // 하드코딩 넘버 지양
-        transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput); // 초당 오른쪽으로 감. 오른쪽으로 가는 정도를 조정해서 옆으로 이동
+        //transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput); // 초당 오른쪽으로 감. 오른쪽으로 가는 정도를 조정해서 옆으로 이동
         // horizontalInput: 바의 값을 받아서 사용
+        transform.Rotate(Vector3.up * Time.deltaTime * turnSpeed * horizontalInput);
     }
 }
