@@ -14,6 +14,6 @@ public class RotatePropellerX : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(offset * speed);
+        transform.Rotate(offset * speed * Time.deltaTime); // * Time.deltaTime 꼭 곱해주는게 좋다
     }
 }
