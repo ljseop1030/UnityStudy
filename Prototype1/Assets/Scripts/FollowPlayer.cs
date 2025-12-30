@@ -14,7 +14,7 @@ public class FollowPlayer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate() // Update가 발생한 이후에 실행. 차가 움직인 직후 따라감. 동시에 움직이느라 지글거리는 효과 없앨 수 있음.
     {
         transform.position = player.transform.position + offset;        
         // player의 위치에 (0,5,-8) 더해서 카메라 위치 지정. 같은 3차원 vector로 만들어줘야 함.
