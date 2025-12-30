@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MoveForward : MonoBehaviour
 {
-    public float speed = 10;
+    public float speed = 40f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
