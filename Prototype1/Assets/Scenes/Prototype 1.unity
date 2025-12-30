@@ -592,6 +592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f373d7ec808aae84994625b3be8e02d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  speed: 20
 --- !u!54 &782086477
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1316,8 +1317,8 @@ SceneRoots:
   - {fileID: 1385500138}
   - {fileID: 186333766}
   - {fileID: 1346488522}
-  - {fileID: 1035267404}
   - {fileID: 2030160602}
-  - {fileID: 171436578}
   - {fileID: 1159907714}
+  - {fileID: 1035267404}
+  - {fileID: 171436578}
   - {fileID: 838775295}
