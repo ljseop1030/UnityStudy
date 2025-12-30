@@ -24,6 +24,6 @@ public class PlayerControllerX : MonoBehaviour
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
 
         // tilt the plane up/down based on up/down arrow keys
-        transform.Rotate(Vector3.left * rotationSpeed * Time.deltaTime * verticalInput );
+        transform.Rotate(Vector3.right * rotationSpeed * Time.deltaTime * verticalInput ); // 비행기 조종의 정석 방법이다.
     }
 }
