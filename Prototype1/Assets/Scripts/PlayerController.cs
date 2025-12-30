@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 5.0f;\
+    public float speed = 5.0f;
     // 5.0f <- f는 double을 float로 형번환
 
     // public/private 하려면 클래스 변수. method 안에 들어가면 무조건 private.
