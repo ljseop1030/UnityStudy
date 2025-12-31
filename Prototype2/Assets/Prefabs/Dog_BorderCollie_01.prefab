@@ -2724,6 +2724,7 @@ GameObject:
   - component: {fileID: 2298204481965440233}
   - component: {fileID: 6619417064173474633}
   - component: {fileID: 4368569316989085411}
+  - component: {fileID: 8204458144133852392}
   m_Layer: 0
   m_Name: Dog_BorderCollie_01
   m_TagString: Untagged
@@ -2851,6 +2852,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1365614, y: 0.22526604, z: 0.28647104}
   m_Center: {x: 0.000620789, y: 0.087808765, z: 0.028738128}
+--- !u!114 &8204458144133852392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3977339445311184677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6545d37a076d2a54184c48b7229c4f71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisiions
 --- !u!1 &4008963837848022709
 GameObject:
   m_ObjectHideFlags: 0
