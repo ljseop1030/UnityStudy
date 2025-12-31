@@ -19,7 +19,7 @@ public class SpawnManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S))
         {
             int animalIndex = Random.Range(0, animalPrefabs.Length);
-            Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX,spawnRangeX),0,spawnPosZ)
+            Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX,spawnRangeX),0,spawnPosZ);
 
             Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
             // Instantiate (복제할 오브젝트, 위치, 생성 시 회전값 (원래 프리팹의 회전값 호출한거임!) )
