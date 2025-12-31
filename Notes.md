@@ -24,6 +24,22 @@
 
 앞으로 임포트 전에 "이 패키지가 어떤 렌더 파이프라인용인지" 확인하는 습관 들이면 좋다.
 
+**해결방안2**
+🛠️
+유니티에는 자동으로 옛날 재질을 최신 방식으로 바꿔주는 기능이 있습니다. 순서대로 따라 해보세요.
+
+1. 유니티 상단 메뉴에서 Window > Rendering > Render Pipeline Converter를 클릭합니다.
+(만약 메뉴가 없다면 Edit > Rendering > Materials > Convert All Built-in Materials to URP를 찾아보세요)
+
+2. 창이 뜨면 Dropdown 메뉴에서 Built-in to URP를 선택합니다.
+목록에 있는 체크박스들(특히 Material Upgrade)을 모두 체크합니다.
+
+3. 왼쪽 아래 Initialize Converters 버튼을 누릅니다.
+
+4. 잠시 후 오른쪽 아래 Convert Assets 버튼이 활성화되면 클릭합니다.
+
+5. 이렇게 하면 핑크색이 사라지고 정상적인 색깔(초록 들판, 비행기 등)이 나올 것입니다.
+
 ## 단축키
 
 우클릭 + WASD : 시점 이동
