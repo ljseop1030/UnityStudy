@@ -1171,6 +1171,7 @@ GameObject:
   - component: {fileID: 8081214236022600570}
   - component: {fileID: 292940577950159450}
   - component: {fileID: 6227223059374223146}
+  - component: {fileID: -7070501159683921071}
   m_Layer: 0
   m_Name: Animal_Horse_Black
   m_TagString: Untagged
@@ -1246,6 +1247,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03744b0c4c91b9e439e5617c3199fa33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
+--- !u!65 &-7070501159683921071
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5506834560273963287}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 18.189331, y: 27.786352, z: 48.75812}
+  m_Center: {x: -0.12632817, y: 13.393174, z: 5.319624}
 --- !u!1 &5942904404261094047
 GameObject:
   m_ObjectHideFlags: 0
