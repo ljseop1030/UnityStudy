@@ -40,6 +40,9 @@
 
 5. 이렇게 하면 핑크색이 사라지고 정상적인 색깔(초록 들판, 비행기 등)이 나올 것입니다.
 
+## Input issue
+Edit → Project Settings → Player → Other Settings → Active Input Handling : Both
+
 ## 단축키
 
 우클릭 + WASD : 시점 이동
