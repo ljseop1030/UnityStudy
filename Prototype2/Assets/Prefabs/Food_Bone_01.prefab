@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5345494898593435963}
   - component: {fileID: 1667258729024242293}
   - component: {fileID: 3904547150822812101}
-  - component: {fileID: 4681287428085784348}
   - component: {fileID: 602992267368147510}
+  - component: {fileID: -7860485683738672243}
   m_Layer: 0
   m_Name: Food_Bone_01
   m_TagString: Untagged
@@ -92,19 +92,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4681287428085784348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639382956968727288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d24d2793d07f078478100d8e6b09edb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MoveForward
-  speed: 10
 --- !u!114 &602992267368147510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,3 +104,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03744b0c4c91b9e439e5617c3199fa33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
+--- !u!114 &-7860485683738672243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639382956968727288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d24d2793d07f078478100d8e6b09edb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoveForward
+  speed: 40
