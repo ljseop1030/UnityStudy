@@ -5,10 +5,10 @@ public class Target : MonoBehaviour
     private Rigidbody targetRb;
 
     private float minSpeed = 12;
-    private float maxSpeed = 16;
-    private float maxTorque = 10;
+    private float maxSpeed = 13;
+    private float maxTorque = 8;
     private float xRange = 4;
-    private float ySpawnPos = -6;
+    private float ySpawnPos = -2;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -41,6 +41,7 @@ public class Target : MonoBehaviour
 
     private void OnMouseDown()
     {
+        Debug.Log("Clicked!");
         Destroy (gameObject);
     }
     private void OnTriggerEnter(Collider other)
