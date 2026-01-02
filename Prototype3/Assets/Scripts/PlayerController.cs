@@ -1,4 +1,6 @@
+using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 
 public class PlayerController : MonoBehaviour
 {
@@ -7,6 +9,8 @@ public class PlayerController : MonoBehaviour
 
     public float jumpForce=10;
     public float gravityModifier=1;
+
+    public bool gameOver = false;
 
 
 
@@ -30,6 +34,15 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isOnGround = true;
+        }
+        else if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            gameOver = true;
+            Debug.Log("Game Over!");
+        }
         isOnGround = true;       
     }
 }
