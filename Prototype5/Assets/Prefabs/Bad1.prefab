@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7064370464588276030}
   - component: {fileID: 4243148052678649265}
   - component: {fileID: 1628025588034775320}
+  - component: {fileID: 985433550020582375}
   m_Layer: 0
   m_Name: Bad1
   m_TagString: Untagged
@@ -34,7 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!33 &2484858819639498479
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -138,5 +139,17 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.42912176, y: 0.5520757, z: 0.46483076}
-  m_Center: {x: 0, y: -0.02673658, z: -0.023982435}
+  m_Size: {x: 0.5541083, y: 0.62593174, z: 0.63410515}
+  m_Center: {x: 0.000000023841858, y: -0.0352582, z: -0.046990406}
+--- !u!114 &985433550020582375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7954565703533084926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 179062dab5eb3ef4ebb0d18a5dfff423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Target

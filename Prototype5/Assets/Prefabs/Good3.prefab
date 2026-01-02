@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2500544463047966666}
   - component: {fileID: 4773692475075778181}
   - component: {fileID: 3236961378087890945}
+  - component: {fileID: 4979785551768782742}
   m_Layer: 0
   m_Name: Good3
   m_TagString: Untagged
@@ -111,8 +112,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.9964992, y: 0.99649537, z: 0.9964957}
-  m_Center: {x: 0.0000001937151, y: 0, z: -0.000000014901161}
+  m_Size: {x: 1.2521535, y: 1.2663536, z: 1.4114475}
+  m_Center: {x: -0.014202774, y: 0.0071020126, z: 0.0097566545}
 --- !u!54 &3236961378087890945
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -140,3 +141,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4979785551768782742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331958926807978719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 179062dab5eb3ef4ebb0d18a5dfff423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Target
